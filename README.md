@@ -6,5 +6,3 @@ Project application for SJSU's 131 - Software Engineering I
 ### Some Screenshots
 
 <img src="images/fitness_app.gif" height="300em" />
-
-# This initialized the DarkMode branch in Git
