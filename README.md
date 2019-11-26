@@ -7,6 +7,10 @@ Project application for SJSU's 131 - Software Engineering I
 
 <img src="images/fitness_app.gif" height="300em" />
 
+<<<<<<< HEAD
 
 
 This initilialized the database branch in Git
+=======
+This initialized the DarkMode branch in Git
+>>>>>>> darkMode
