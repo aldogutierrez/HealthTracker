@@ -9,4 +9,3 @@ Project application for SJSU's 131 - Software Engineering I
 
 
 
-# This initilialized the database branch in Git
