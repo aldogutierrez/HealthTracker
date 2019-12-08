@@ -11,7 +11,7 @@ class _SettingsState extends State<Settings> {
   void initState() {
     super.initState();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -27,12 +27,12 @@ class _SettingsState extends State<Settings> {
                     top: MediaQuery.of(context).padding.top,
                     left: 16,
                     right: 16),
-                child: Image.asset("assets/images/helpImage.png"),
+                child: Image.asset("assets/images/settingsImage.png"),
               ),
               Container(
                 padding: EdgeInsets.only(top: 8),
                 child: Text(
-                  "Settings:",
+                  "Settings",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
