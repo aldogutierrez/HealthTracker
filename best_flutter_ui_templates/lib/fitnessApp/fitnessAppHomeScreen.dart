@@ -3,6 +3,7 @@ import 'package:best_flutter_ui_templates/fitnessApp/traning/trainingScreen.dart
 import 'package:flutter/material.dart';
 import 'bottomNavigationView/bottomBarView.dart';
 import 'fintnessAppTheme.dart';
+import 'fitnessAppThemeDark.dart';
 import 'myDiary/myDiaryScreen.dart';
 
 class FitnessAppHomeScreen extends StatefulWidget {
