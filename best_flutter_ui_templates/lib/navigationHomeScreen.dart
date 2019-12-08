@@ -3,6 +3,7 @@ import 'package:best_flutter_ui_templates/customDrawer/drawerUserController.dart
 import 'package:best_flutter_ui_templates/customDrawer/homeDrawer.dart';
 import 'package:best_flutter_ui_templates/feedbackScreen.dart';
 import 'package:best_flutter_ui_templates/helpScreen.dart';
+import 'package:best_flutter_ui_templates/settings.dart';
 import 'package:best_flutter_ui_templates/homeScreen.dart';
 import 'package:best_flutter_ui_templates/inviteFriendScreen.dart';
 import 'package:flutter/material.dart';
@@ -69,6 +70,9 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
           screenView = InviteFriend();
         });
       } else {
+        setState(() {
+          screenView = Settings();
+        });
         //do in your way......
       }
     }
