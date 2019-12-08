@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Dart",
-            "program": "//Users/aldo_gutierrez/Desktop/CMPE-131/Project/HealthTracker/best_flutter_ui_templates/lib/main.dart",
+            "program": "/Users/aldo_gutierrez/Desktop/CMPE-131/Project/HealthTracker/best_flutter_ui_templates/lib/main.dart",
             "request": "launch",
             "type": "dart"
         }
