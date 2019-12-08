@@ -45,16 +45,6 @@ class _HomeDrawerState extends State<HomeDrawer> {
         icon: new Icon(Icons.group),
       ),
       DrawerList(
-        index: DrawerIndex.Share,
-        labelName: 'Rate the app',
-        icon: new Icon(Icons.share),
-      ),
-      DrawerList(
-        index: DrawerIndex.About,
-        labelName: 'About Us',
-        icon: new Icon(Icons.info),
-      ),
-      DrawerList(
         index: DrawerIndex.Settings,
         labelName: 'Settings',
         icon: new Icon(Icons.settings),
@@ -292,7 +282,6 @@ enum DrawerIndex {
   FeedBack,
   Help,
   Share,
-  About,
   Settings,
   Invite,
   Testing,
