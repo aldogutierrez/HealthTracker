@@ -4,7 +4,7 @@ class FintnessAppDarkTheme {
   FintnessAppDarkTheme._();
   static const Color nearlyWhite = Color(0xFFFAFAFA);
   static const Color white = Color(0xFFFFFFFF);
-  static const Color background = Color(0xFFF2F3F8);
+  static const Color background = Color(0xFF121212);
   static const Color nearlyDarkBlue = Color(0xFF2633C5);
 
   static const Color nearlyBlue = Color(0xFF00B6F0);
@@ -36,7 +36,7 @@ class FintnessAppDarkTheme {
     fontSize: 36,
     letterSpacing: 0.4,
     height: 0.9,
-    color: darkerText,
+    color: nearlyWhite,
   );
 
   static const TextStyle headline = TextStyle(
@@ -44,7 +44,7 @@ class FintnessAppDarkTheme {
     fontWeight: FontWeight.bold,
     fontSize: 24,
     letterSpacing: 0.27,
-    color: darkerText,
+    color: nearlyWhite,
   );
 
   static const TextStyle title = TextStyle(
