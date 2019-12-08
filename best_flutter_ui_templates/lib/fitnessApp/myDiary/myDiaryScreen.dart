@@ -3,9 +3,11 @@ import 'package:best_flutter_ui_templates/fitnessApp/UIview/glassView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/UIview/mediterranesnDietView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/UIview/titleView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/fintnessAppTheme.dart';
+import 'package:best_flutter_ui_templates/fitnessApp/fitnessAppThemeDark.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/myDiary/mealsListView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/myDiary/waterView.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class MyDiaryScreen extends StatefulWidget {
   final AnimationController animationController;
@@ -22,6 +24,8 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
   List<Widget> listViews = List<Widget>();
   var scrollController = ScrollController();
   double topBarOpacity = 0.0;
+
+  String date = new DateFormat("MMM d").format(new DateTime.now());
 
   @override
   void initState() {
@@ -292,7 +296,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                     ),
                                   ),
                                   Text(
-                                    "15 May",
+                                    date,
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
                                       fontFamily: FintnessAppTheme.fontName,
