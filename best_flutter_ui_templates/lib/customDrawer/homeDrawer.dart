@@ -54,6 +54,11 @@ class _HomeDrawerState extends State<HomeDrawer> {
         labelName: 'About Us',
         icon: new Icon(Icons.info),
       ),
+      DrawerList(
+        index: DrawerIndex.Settings,
+        labelName: 'Settings',
+        icon: new Icon(Icons.settings),
+      ),
     ];
   }
 
@@ -288,6 +293,7 @@ enum DrawerIndex {
   Help,
   Share,
   About,
+  Settings,
   Invite,
   Testing,
 }

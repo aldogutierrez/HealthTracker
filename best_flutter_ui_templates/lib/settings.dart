@@ -31,7 +31,7 @@ class _SettingsState extends State<Settings> {
               Container(
                 padding: EdgeInsets.only(top: 8),
                 child: Text(
-                  'Settings:',
+                  "Settings:",
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
