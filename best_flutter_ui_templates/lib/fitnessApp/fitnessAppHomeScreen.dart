@@ -6,6 +6,7 @@ import 'bottomNavigationView/bottomBarView.dart';
 import 'fintnessAppTheme.dart';
 import 'fitnessAppThemeDark.dart';
 import 'myDiary/myDiaryScreen.dart';
+import 'myInfo/graphView.dart';
 
 class FitnessAppHomeScreen extends StatefulWidget {
   @override
@@ -118,7 +119,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 if (!mounted) return;
                 setState(() {
                   tabBody =
-                      MyDiaryScreen(animationController: animationController);
+                      GraphScreen(animationController: animationController);
                 });
               });
             }
