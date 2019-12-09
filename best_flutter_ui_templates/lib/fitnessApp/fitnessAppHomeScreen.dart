@@ -80,7 +80,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
           tabIconsList: tabIconsList,
           addClick: () {},
           changeIndex: (index) {
-            if (index == 0 || index == 2) {
+            if (index == 0) {
               animationController.reverse().then((data) {
                 if (!mounted) return;
                 setState(() {
@@ -88,12 +88,36 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                       MyDiaryScreen(animationController: animationController);
                 });
               });
-            } else if (index == 1 || index == 3) {
+            } else if (index == 1) {
               animationController.reverse().then((data) {
                 if (!mounted) return;
                 setState(() {
                   tabBody =
                       TrainingScreen(animationController: animationController);
+                });
+              });
+            } else if (index == 2) {
+              animationController.reverse().then((data) {
+                if (!mounted) return;
+                setState(() {
+                  tabBody =
+                      MyDiaryScreen(animationController: animationController);
+                });
+              });
+            } else if (index == 3) {
+              animationController.reverse().then((data) {
+                if (!mounted) return;
+                setState(() {
+                  tabBody =
+                      MyDiaryScreen(animationController: animationController);
+                });
+              });
+            } else if (index == 4) {
+              animationController.reverse().then((data) {
+                if (!mounted) return;
+                setState(() {
+                  tabBody =
+                      MyDiaryScreen(animationController: animationController);
                 });
               });
             }
