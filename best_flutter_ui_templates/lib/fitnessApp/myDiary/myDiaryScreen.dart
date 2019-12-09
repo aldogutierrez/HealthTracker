@@ -253,7 +253,7 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   "My Diary",
-                                  textAlign: TextAlign.left,
+                                  textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
                                     fontWeight: FontWeight.w700,

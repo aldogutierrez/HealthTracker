@@ -2,9 +2,9 @@ import 'package:best_flutter_ui_templates/appTheme.dart';
 import 'package:best_flutter_ui_templates/customDrawer/drawerUserController.dart';
 import 'package:best_flutter_ui_templates/customDrawer/homeDrawer.dart';
 import 'package:best_flutter_ui_templates/feedbackScreen.dart';
+import 'package:best_flutter_ui_templates/fitnessApp/fitnessAppHomeScreen.dart';
 import 'package:best_flutter_ui_templates/helpScreen.dart';
 import 'package:best_flutter_ui_templates/settings.dart';
-import 'package:best_flutter_ui_templates/homeScreen.dart';
 import 'package:best_flutter_ui_templates/inviteFriendScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
   @override
   void initState() {
     drawerIndex = DrawerIndex.HOME;
-    screenView = MyHomePage();
+    screenView = FitnessAppHomeScreen();
     super.initState();
   }
 
@@ -55,7 +55,7 @@ class _NavigationHomeScreenState extends State<NavigationHomeScreen> {
       drawerIndex = drawerIndexdata;
       if (drawerIndex == DrawerIndex.HOME) {
         setState(() {
-          screenView = MyHomePage();
+          screenView = FitnessAppHomeScreen();
         });
       } else if (drawerIndex == DrawerIndex.Help) {
         setState(() {

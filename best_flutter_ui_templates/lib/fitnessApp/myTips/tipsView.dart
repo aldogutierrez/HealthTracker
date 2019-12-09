@@ -376,7 +376,7 @@ class _MyTipsScreenState extends State<TipsView> with TickerProviderStateMixin {
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
                                   "Daily Tips",
-                                  textAlign: TextAlign.left,
+                                  textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
                                     fontWeight: FontWeight.w700,
