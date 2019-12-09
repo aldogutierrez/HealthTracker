@@ -1,9 +1,6 @@
-import 'package:best_flutter_ui_templates/fitnessApp/UIview/mediterranesnDietView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/UIview/titleView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/fintnessAppTheme.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/fitnessAppThemeDark.dart';
-import 'package:best_flutter_ui_templates/fitnessApp/myDiary/mealsListView.dart';
-import 'package:best_flutter_ui_templates/fitnessApp/myDiary/waterView.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -15,8 +12,7 @@ class TipsView extends StatefulWidget {
   _MyTipsScreenState createState() => _MyTipsScreenState();
 }
 
-class _MyTipsScreenState extends State<TipsView>
-    with TickerProviderStateMixin {
+class _MyTipsScreenState extends State<TipsView> with TickerProviderStateMixin {
   Animation<double> topBarAnimation;
 
   List<Widget> listViews = List<Widget>();
@@ -58,32 +54,34 @@ class _MyTipsScreenState extends State<TipsView>
   }
 
   void addAllListData() {
-    var count = 9;
+    var count = 20;
 
     listViews.add(
       TitleView(
-        titleTxt: 'Mediterranean diet',
-        subTxt: 'Details',
+        titleTxt: 'Drink four liters of water today',
+        subTxt: 'Tip #1',
         animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
-                Interval((1 / count) * 0, 1.0, curve: Curves.fastOutSlowIn))),
-        animationController: widget.animationController,
-      ),
-    );
-    listViews.add(
-      MediterranesnDietView(
-        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController,
-            curve:
-                Interval((1 / count) * 1, 1.0, curve: Curves.fastOutSlowIn))),
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
         animationController: widget.animationController,
       ),
     );
     listViews.add(
       TitleView(
-        titleTxt: 'Meals today',
-        subTxt: 'Customize',
+        titleTxt: 'Eat your fruits and vegetables',
+        subTxt: 'Tip #2',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Do not go to school today',
+        subTxt: 'Tip #3',
         animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
@@ -93,66 +91,193 @@ class _MyTipsScreenState extends State<TipsView>
     );
 
     listViews.add(
-      MealsListView(
-        mainScreenAnimation: Tween(begin: 0.0, end: 1.0).animate(
-            CurvedAnimation(
-                parent: widget.animationController,
-                curve: Interval((1 / count) * 3, 1.0,
-                    curve: Curves.fastOutSlowIn))),
-        mainScreenAnimationController: widget.animationController,
+      TitleView(
+        titleTxt: 'Run two miles this week',
+        subTxt: 'Tip #4',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
       ),
     );
 
     listViews.add(
       TitleView(
-        titleTxt: 'Body measurement',
-        subTxt: 'Today',
+        titleTxt: 'Reduce sugars and foods high in glucose',
+        subTxt: 'Tip #5',
         animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
-                Interval((1 / count) * 4, 1.0, curve: Curves.fastOutSlowIn))),
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
         animationController: widget.animationController,
       ),
     );
 
     listViews.add(
-      BodyMeasurementView(
+      TitleView(
+        titleTxt: 'Go to the gym',
+        subTxt: 'Tip #6',
         animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
-                Interval((1 / count) * 5, 1.0, curve: Curves.fastOutSlowIn))),
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
         animationController: widget.animationController,
       ),
     );
     listViews.add(
       TitleView(
-        titleTxt: 'Water',
-        subTxt: 'Aqua SmartBottle',
+        titleTxt: 'Go rock climb at the SJSU SRAC',
+        subTxt: 'Tip #7',
         animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
             parent: widget.animationController,
             curve:
-                Interval((1 / count) * 6, 1.0, curve: Curves.fastOutSlowIn))),
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
         animationController: widget.animationController,
       ),
     );
-
     listViews.add(
-      WaterView(
-        mainScreenAnimation: Tween(begin: 0.0, end: 1.0).animate(
-            CurvedAnimation(
-                parent: widget.animationController,
-                curve: Interval((1 / count) * 7, 1.0,
-                    curve: Curves.fastOutSlowIn))),
-        mainScreenAnimationController: widget.animationController,
+      TitleView(
+        titleTxt: 'Don\'t use the computer for more than one hour each day',
+        subTxt: 'Tip #8',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
       ),
     );
     listViews.add(
-      GlassView(
-          animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-              parent: widget.animationController,
-              curve:
-                  Interval((1 / count) * 8, 1.0, curve: Curves.fastOutSlowIn))),
-          animationController: widget.animationController),
+      TitleView(
+        titleTxt: 'Drink less alcohol',
+        subTxt: 'Tip #9',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Hire a personal trainer',
+        subTxt: 'Tip #10',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Go outside more often',
+        subTxt: 'Tip #11',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Fast for two weeks',
+        subTxt: 'Tip #12',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Eat more protein',
+        subTxt: 'Tip #13',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Don\'t do drugs',
+        subTxt: 'Tip #14',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Play two soccer games this week',
+        subTxt: 'Tip #15',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Lift weights for 5 hours this week',
+        subTxt: 'Tip #16',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Do some manual labor',
+        subTxt: 'Tip #17',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Drop out of college',
+        subTxt: 'Tip #18',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'Why haven\'t you dropped out yet?',
+        subTxt: 'Tip #19',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
+    );
+    listViews.add(
+      TitleView(
+        titleTxt: 'College is unnesesary stress',
+        subTxt: 'Tip #20',
+        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+            parent: widget.animationController,
+            curve:
+                Interval((1 / count) * 2, 1.0, curve: Curves.fastOutSlowIn))),
+        animationController: widget.animationController,
+      ),
     );
   }
 
@@ -250,7 +375,7 @@ class _MyTipsScreenState extends State<TipsView>
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Text(
-                                  "My Diary",
+                                  "Daily Tips",
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     fontFamily: FintnessAppTheme.fontName,
