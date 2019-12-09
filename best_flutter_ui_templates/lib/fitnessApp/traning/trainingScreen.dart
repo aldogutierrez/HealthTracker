@@ -3,8 +3,10 @@ import 'package:best_flutter_ui_templates/fitnessApp/UIview/runningView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/UIview/titleView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/UIview/workoutView.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../fintnessAppTheme.dart';
+import '../fitnessAppThemeDark.dart'; //File that contains dark theme specs
 
 
 class TrainingScreen extends StatefulWidget {
@@ -22,6 +24,8 @@ class _TrainingScreenState extends State<TrainingScreen>
   List<Widget> listViews = List<Widget>();
   var scrollController = ScrollController();
   double topBarOpacity = 0.0;
+
+  String date = new DateFormat("MMM d").format(new DateTime.now());
 
   @override
   void initState() {
@@ -251,7 +255,7 @@ class _TrainingScreenState extends State<TrainingScreen>
                                     ),
                                   ),
                                   Text(
-                                    "15 May",
+                                    date,
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
                                       fontFamily: FintnessAppTheme.fontName,
