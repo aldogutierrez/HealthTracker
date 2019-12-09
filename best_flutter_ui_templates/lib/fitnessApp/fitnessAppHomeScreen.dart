@@ -1,4 +1,5 @@
 import 'package:best_flutter_ui_templates/fitnessApp/models/tabIconData.dart';
+import 'package:best_flutter_ui_templates/fitnessApp/myTips/tipsView.dart';
 import 'package:best_flutter_ui_templates/fitnessApp/traning/trainingScreen.dart';
 import 'package:flutter/material.dart';
 import 'bottomNavigationView/bottomBarView.dart';
@@ -109,7 +110,7 @@ class _FitnessAppHomeScreenState extends State<FitnessAppHomeScreen>
                 if (!mounted) return;
                 setState(() {
                   tabBody =
-                      MyDiaryScreen(animationController: animationController);
+                      TipsView(animationController: animationController);
                 });
               });
             } else if (index == 4) {
