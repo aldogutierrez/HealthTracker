@@ -12,6 +12,8 @@ class _SettingsState extends State<Settings> {
     super.initState();
   }
 
+  bool isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -49,12 +51,22 @@ class _SettingsState extends State<Settings> {
                   ),
                 ),
               ),
+              Switch(
+                value: isSwitched,
+                onChanged: (value) {
+                  setState(() {
+                    isSwitched = value;
+                  });
+                },
+                activeTrackColor: Colors.lightGreenAccent,
+                activeColor: Colors.green,
+              ),
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Center(
                     child: Container(
-                      width: 140,
+                      width: 240,
                       height: 40,
                       decoration: BoxDecoration(
                         color: Colors.blue,
